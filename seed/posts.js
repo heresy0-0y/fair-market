@@ -12,6 +12,10 @@ const main = async () => {
       subject: "i love this show",
       content: "jerry seinfeld should stop hurting the bees",
     },
+    {
+      subject: 'turtles',
+      content: "i think so too"
+    }
   ];
   await Post.insertMany(posts);
   console.log("we made the posths !!");
