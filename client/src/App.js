@@ -22,8 +22,10 @@ function App() {
     fetchUser();
   }, []);
 
+  const clearUser = () => setUser(null);
+
   return (
-    <div className="App">
+    <div className="app">
       <Switch>
         <Route exact path="/">
           <Storefront user={user} />
