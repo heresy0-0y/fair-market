@@ -7,10 +7,7 @@ const getToken = () => {
 };
 
 const api = axios.create({
-  baseURL:
-    process.env.NODE_ENV === "production"
-      ? "https://fair-market-backend.herokuapp.com/api"
-      : "http://localhost:3000/api",
+  baseURL: "https://fair-market-backend.herokuapp.com/api",
 });
 
 api.interceptors.request.use(

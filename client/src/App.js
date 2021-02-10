@@ -3,7 +3,9 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import { verifyUser } from "./services/users";
 import Storefront from "./screens/Storefront/Storefront";
 import StorefrontSocial from "./screens/StorefrontSocial/StorefrontSocial";
-import SignUpIn from "./screens/SignUpIn";
+import SignUp from "./screens/SignUp/SignUp";
+import SignIn from "./screens/SignIn/SignIn";
+import SignOut from "./screens/SignOut/SignOut";
 import PostCreate from "./screens/PostCreate/PostCreate";
 import PostEdit from "./screens/PostEdit/PostEdit";
 import PostDetail from "./screens/PostDetail/PostDetail";
@@ -27,13 +29,13 @@ function App() {
           <Storefront user={user} />
         </Route>
         <Route path="/signup">
-          <SignUpIn setUser={setUser} />
+          <SignUp setUser={setUser} />
         </Route>
         <Route path="/signin">
-          <SignUpIn setUser={setUser} />
+          <SignIn setUser={setUser} />
         </Route>
         <Route path="/signout">
-          <SignUpIn setUser={setUser} clearUser={clearUser} />
+          <SignOut setUser={setUser} clearUser={clearUser} />
         </Route>
         <Route exact path="/storefront-social">
           <StorefrontSocial user={user} />
