@@ -29,6 +29,9 @@ function App() {
         <Route path="/signup">
           <SignUpIn setUser={setUser} />
         </Route>
+        <Route path="/signin">
+          <SignUpIn setUser={setUser} />
+        </Route>
         <Route path="/signout">
           <SignUpIn setUser={setUser} clearUser={clearUser} />
         </Route>
