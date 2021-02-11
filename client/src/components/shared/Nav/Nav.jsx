@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom";
 const authenticatedOptions = (
   <>
     <NavLink className="link" to="/storefront-social/add-post">
-      Add Product
+      Add Post
     </NavLink>
-    <NavLink className="link" to="/sign-out">
+    <NavLink className="link" to="/signout">
       Sign Out
     </NavLink>
   </>
@@ -15,10 +15,10 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
   <>
-    <NavLink className="link" to="/sign-up">
+    <NavLink className="link" to="/signup">
       Sign Up
     </NavLink>
-    <NavLink className="link" to="/sign-in">
+    <NavLink className="link" to="/signin">
       Sign In
     </NavLink>
   </>
@@ -27,7 +27,7 @@ const unauthenticatedOptions = (
 const alwaysOptions = (
   <>
     <NavLink className="link" to="/storefront-social/posts">
-      Products
+      Posts
     </NavLink>
   </>
 );
@@ -36,8 +36,8 @@ const Nav = ({ user }) => {
   return (
     <nav>
       <div className="nav">
-        <NavLink className="logo" to="/">
-          ProductsApp
+        <NavLink className="logo" to="/storefront-social/posts">
+          StorefrontSocial
         </NavLink>
         <div className="links">
           {user && <div className="link welcome">Welcome, {user.username}</div>}
