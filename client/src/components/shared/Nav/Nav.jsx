@@ -37,7 +37,7 @@ const Nav = ({ user }) => {
     <nav>
       <div className="nav">
         <NavLink className="logo" to="/storefront-social/posts">
-          StorefrontSocial
+          Storefront Social
         </NavLink>
         <div className="links">
           {user && <div className="link welcome">Welcome, {user.username}</div>}

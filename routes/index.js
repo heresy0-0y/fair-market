@@ -6,7 +6,7 @@ const router = Router();
 
 router.get("/", (req, res) => res.send("groobt num num num"));
 
-router.use("/users", usersRouter);
+router.use("/", usersRouter);
 router.use("/storefront/posts", postsRouter);
 
 module.exports = router;
