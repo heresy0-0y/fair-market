@@ -1,5 +1,7 @@
 
 nav {
+  display: flex;
+  justify-content: space-around;
     flex: 1;
     position: fixed;
     width: 100%;
@@ -27,6 +29,8 @@ nav {
     flex: 1;
     max-width: 30vw;
     transition: 250ms all;
+    text-decoration: none;
+    color: #FFD5AC;
 }
 
 .logo:hover {
