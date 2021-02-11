@@ -28,7 +28,7 @@ function App() {
     <div className="app">
       <Switch>
         <Route exact path="/">
-          <StorefrontSocial user={user} />
+          <Storefront user={user} />
         </Route>
         <Route path="/signup">
           <SignUp setUser={setUser} />
@@ -39,7 +39,7 @@ function App() {
         <Route path="/signout">
           <SignOut setUser={setUser} clearUser={clearUser} />
         </Route>
-        <Route exact path="/storefront-social">
+        <Route exact path="/storefront-social/posts">
           <StorefrontSocial user={user} />
         </Route>
         <Route path="/storefront-social/add-post">
