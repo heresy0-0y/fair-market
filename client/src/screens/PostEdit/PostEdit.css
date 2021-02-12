@@ -1,3 +1,6 @@
+.textarea-content {
+  margin-top: 25px;
+}
 .post-edit {
   display: flex;
   padding: 100px;
@@ -13,6 +16,16 @@
   text-decoration: none;
   font-family: Comfortaa;
   color: #FFC3B4;
+  background-color: #134762;
+  padding: 50px;
+  box-shadow: 5px 5px #FFC3B4;
+
+
+}
+
+.post-container:hover {
+  transform: scale(1.2)
+
 }
 
 .post-container a {
