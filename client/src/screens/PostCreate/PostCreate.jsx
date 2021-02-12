@@ -37,7 +37,6 @@ const PostCreate = (props) => {
           value={props.user}
           name="subject"
           required
-          autoFocus
           onChange={handleChange}
         />
         <textarea
