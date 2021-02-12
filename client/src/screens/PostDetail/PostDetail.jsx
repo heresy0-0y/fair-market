@@ -33,7 +33,7 @@ const PostDetail = (props) => {
             <button className="edit-button">
               <Link
                 className="edit-link"
-                to={`storefront-social/posts/${post._id}/edit`}
+                to={`/storefront-social/posts/${post._id}/edit`}
               >
                 Edit
               </Link>
