@@ -1,0 +1,89 @@
+.post-edit {
+  display: flex;
+  padding: 100px;
+  padding-top: 80px;
+  margin-top: 50px;
+}
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.edit-post-image {
+  width: 500px;
+  padding: 0 40px;
+  padding-bottom: 5px;
+  margin-top: 50px;
+}
+
+.edit-input-image-link {
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  font-family: Comfortaa;
+  margin-top: 50px;
+}
+
+.edit-form {
+  font-family: Comfortaa;
+  line-height: 1.6;
+  margin-top: 50px;
+}
+
+.input-name {
+  font-family: Comfortaa;
+  font-size: 64px;
+  letter-spacing: 1px;
+  padding: 5px;
+  margin-top: 50px;
+}
+
+.textarea-description {
+  font-family: Comfortaa;
+  font-size: 16px;
+  padding: 10px;
+  letter-spacing: .9px;
+  line-height: 1.6;
+  margin-top: 50px;
+}
+
+.save-button {
+  font-size: 22px;
+  font-family: Comfortaa;
+  height: 40px;
+  width: 200px;
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #318B9E;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .input-name {
+      margin-left: -10px;
+      padding-left: -10px;
+      font-size: 26px;
+  }
+  .edit-form {
+      padding: 0px;
+  }
+  .textarea-description {
+      width: 100%;
+      padding: 0px;
+  }
+  .post-edit {
+      width: 100%;
+      flex-direction: column;
+  }
+  .image-container {
+      width: 100%;
+  }
+  .edit-post-image {
+      width: 300px;
+  }
+}

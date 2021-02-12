@@ -9,6 +9,7 @@ nav {
     z-index: 1;
     top: 0;
     left: 0;
+    margin-bottom: 50;
 }
 
 .nav {
@@ -19,6 +20,7 @@ nav {
     margin-top: -2px;
     box-shadow: 1px 1px 1px .3px #FFD5AC;
     width: 100%;
+    margin-bottom: 50;
 }
 
 .logo {
