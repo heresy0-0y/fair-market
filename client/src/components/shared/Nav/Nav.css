@@ -5,11 +5,12 @@ nav {
     flex: 1;
     position: fixed;
     width: 100%;
-    background-color: #33749B;
+    background-color: #2AB8A2;
     z-index: 1;
     top: 0;
     left: 0;
     margin-bottom: 50;
+    text-shadow: 2px 2px 1px #134762;
 }
 
 .nav {
@@ -58,6 +59,27 @@ nav {
     font-family: 'Comfortaa';
     align-items: stretch;
     
+
+}
+.search-input {
+  box-shadow: 2px 2px 10px 2px #89858B;
+  color: #134762;
+    font-family: 'Comfortaa';
+    font-size: 18px;
+    margin-top: 25px;
+}
+.sort-container {
+  font-family: 'Comfortaa';
+  font-size: 14px;
+  color: #FFD5AC;
+
+}
+select.sort {
+  box-shadow: 2px 2px 10px 2px #89858B;
+  color: #134762;
+    font-family: 'Comfortaa';
+    font-size: 18px;
+    margin-top: 10px;
 
 }
 

@@ -10,6 +10,44 @@
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  text-decoration: none;
+  font-family: Comfortaa;
+  color: #FFC3B4;
+}
+
+.post-container a {
+
+  text-decoration: none;
+  font-family: Comfortaa;
+  color: #FFC3B4;
+  text-shadow: 2px 2px 1px #134762;
+}
+
+.subject-container{
+  font-family: Comfortaa;
+  color: #FFC3B4;
+  text-decoration: none;
+
+}
+.content-container {
+  font-family: Comfortaa;
+  color: #FFC3B4;
+  text-decoration: none;
+
+
+}
+.dare-container {
+  font-family: Comfortaa;
+  color: #FFC3B4;
+  text-decoration: none;
+
+}
+
+.textarea-content {
+
+  font-family: Comfortaa;
+  color: #FFC3B4;
+  text-decoration: none;  
 }
 
 .edit-post-image {
@@ -17,6 +55,7 @@
   padding: 0 40px;
   padding-bottom: 5px;
   margin-top: 50px;
+  text-decoration: none; 
 }
 
 .edit-input-image-link {
@@ -25,12 +64,14 @@
   font-size: 20px;
   font-family: Comfortaa;
   margin-top: 50px;
+  text-decoration: none; 
 }
 
 .edit-form {
   font-family: Comfortaa;
   line-height: 1.6;
   margin-top: 50px;
+  text-decoration: none; 
 }
 
 .input-name {
@@ -39,6 +80,7 @@
   letter-spacing: 1px;
   padding: 5px;
   margin-top: 50px;
+  text-decoration: none; 
 }
 
 .textarea-description {
@@ -48,6 +90,7 @@
   letter-spacing: .9px;
   line-height: 1.6;
   margin-top: 50px;
+  text-decoration: none; 
 }
 
 .save-button {
