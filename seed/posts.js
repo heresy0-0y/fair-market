@@ -1,5 +1,6 @@
 const db = require("../db/connection");
 const Post = require("../models/post");
+const User = require("../models/user");
 
 db.on(
   "error",
@@ -7,18 +8,36 @@ db.on(
 );
 
 const main = async () => {
+  const user1 = new User({
+    username: "jeff.e",
+    email: "jeffy@gmail.com",
+    posts: [],
+  });
+  await user1.save();
+  const user2 = new User({
+    username: "cint.ia",
+    email: "cintia@gmail.com",
+    posts: [],
+  });
+  await user2.save();
+
   const posts = [
     {
       subject: "i love this show",
       content: "jerry seinfeld should stop hurting the bees",
     },
     {
-      subject: 'turtles',
-      content: "i think so too"
-    }
+      subject: "turtles",
+      content: "i think so too",
+    },
   ];
   await Post.insertMany(posts);
   console.log("we made the posths !!");
+
+  user1.posts = await Post.find({ userId: user1 });
+  await user1.save();
+  user2.posts = await Post.find({ userId: user2 });
+  await user2.save();
 };
 
 const run = async () => {
