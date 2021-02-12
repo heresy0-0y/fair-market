@@ -1,0 +1,15 @@
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2cm;
+  background-color: antiquewhite;
+  
+
+}
+
+.post-large-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
