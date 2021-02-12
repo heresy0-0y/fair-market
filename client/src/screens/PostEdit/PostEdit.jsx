@@ -44,7 +44,7 @@ const PostEdit = (props) => {
         return <Redirect to={`/posts/${props.match.params.id}`} />
     }
 
-    return (
+  return (
         <Layout user={props.user}>
             <div className="post-edit">
           <div className="subject-container">{post.subject}
