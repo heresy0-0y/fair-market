@@ -8,16 +8,15 @@ const PostCreate = (props) => {
   const [post, setPost] = useState({
     subject: "",
     content: "",
-    
-  })
-  const [isCreated, setCreated] = useState(false)
+  });
+  const [isCreated, setCreated] = useState(false);
 
   const handleChange = (event) => {
     const { subject, value } = event.target;
     setPost({
       ...post,
       [subject]: value,
-    })
+    });
   };
 
   const handleSubmit = async (event) => {
@@ -43,14 +42,14 @@ const PostCreate = (props) => {
         <textarea
           className="textarea-content"
           rows={10}
-          placeholder='Content'
+          placeholder="Content"
           value={post.content}
-          name='content'
+          name="content"
           required
           onChange={handleChange}
         />
       </form>
     </Layout>
   );
-}
-export default PostCreate
+};
+export default PostCreate;
