@@ -12,10 +12,10 @@ const PostCreate = (props) => {
   const [isCreated, setCreated] = useState(false);
 
   const handleChange = (event) => {
-    const { subject, value } = event.target;
+    const { name, value } = event.target;
     setPost({
       ...post,
-      [subject]: value,
+      [name]: value,
     });
   };
 
@@ -25,7 +25,7 @@ const PostCreate = (props) => {
     setCreated({ created });
   };
   if (isCreated) {
-    return <Redirect to={`/posts`} />;
+    return <Redirect to={`/storefront-social/posts`} />;
   }
   return (
     <Layout user={props.user}>
@@ -33,10 +33,9 @@ const PostCreate = (props) => {
         <input
           className="input-subject"
           placeholder="Subject"
-          value={props.user}
+          value={props.subject}
           name="subject"
           required
-          autoFocus
           onChange={handleChange}
         />
         <textarea
@@ -48,6 +47,7 @@ const PostCreate = (props) => {
           required
           onChange={handleChange}
         />
+        <button type='submit' className="submit-button">Submit</button>
       </form>
     </Layout>
   );

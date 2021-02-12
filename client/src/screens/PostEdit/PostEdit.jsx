@@ -22,10 +22,10 @@ const PostEdit = (props) => {
   }, [id]);
 
   const handleChange = (event) => {
-    const { subject, value } = event.target;
+    const { name, value } = event.target;
     setPost({
       ...post,
-      [subject]: value,
+      [name]: value,
     });
   };
 
