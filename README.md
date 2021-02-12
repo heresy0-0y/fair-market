@@ -33,7 +33,17 @@ https://github.com/heresy0-0y/fair-market/projects/1
 
 ## Wireframes 
 ![](https://i.ibb.co/BfvtfGn/Screen-Shot-2021-02-09-at-2-04-36-PM.png) 
-https://assets.adobe.com/id/urn:aaid:sc:US:21058031-ca9e-4aef-a287-2f7f56bbd7ab?view=difile
+https://assets.adobe.com/id/urn:aaid:sc:US:21058031-ca9e-4aef-a287-2f7f56bbd7ab?view=difile)
+
+![](https://i.ibb.co/fFYcxdv/Screen-Shot-2021-02-11-at-12-17-19-PM.png)
+
+![](https://i.ibb.co/Bgn7dbF/Screen-Shot-2021-02-11-at-12-18-25-PM.png)
+
+![](https://i.ibb.co/1MfM4dw/Screen-Shot-2021-02-11-at-12-18-37-PM.png)
+
+![](https://i.ibb.co/vjwGxyC/Screen-Shot-2021-02-11-at-12-18-50-PM.png)
+
+
 
 ## Post-MVP
 - [ ] variety in store owners 

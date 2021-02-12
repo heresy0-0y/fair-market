@@ -5,6 +5,7 @@ const Post = new Schema(
   {
     subject: { type: String, required: true },
     content: { type: String, required: true },
+    userId: { type: Schema.Types.ObjectId, ref: "users" },
   },
   { timestamps: true }
 );
