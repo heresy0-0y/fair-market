@@ -15,7 +15,7 @@ const PostCreate = (props) => {
     const { name, value } = event.target;
     setPost({
       ...post,
-      userid: props.user._id,
+      userId: props.user,
       [name]: value,
     });
   };
