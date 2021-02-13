@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./PostDetail.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getPost, deletePost } from "../../services/posts";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useHistory, Link } from "react-router-dom";
 
 const PostDetail = (props) => {
   const [post, setPost] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
+  const history = useHistory();
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -40,7 +41,11 @@ const PostDetail = (props) => {
             </button>
             <button
               className="delete-button"
-              onClick={() => deletePost(post._id)}
+              onClick={() =>
+                deletePost(post._id).then(() =>
+                  history.push("/storefront-social")
+                )
+              }
             >
               Delete
             </button>
