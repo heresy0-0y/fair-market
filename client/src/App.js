@@ -39,7 +39,7 @@ function App() {
         <Route path="/signout">
           <SignOut setUser={setUser} clearUser={clearUser} />
         </Route>
-        <Route exact path="/storefront-social/posts">
+        <Route exact path="/storefront-social">
           <StorefrontSocial user={user} />
         </Route>
         <Route path="/storefront-social/add-post">
