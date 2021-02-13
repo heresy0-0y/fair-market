@@ -25,10 +25,12 @@ const main = async () => {
     {
       subject: "i love this show",
       content: "jerry seinfeld should stop hurting the bees",
+      userId: user2,
     },
     {
       subject: "turtles",
       content: "i think so too",
+      userId: user1,
     },
   ];
   await Post.insertMany(posts);
