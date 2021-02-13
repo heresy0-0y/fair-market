@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { signIn, signUp } from "../../services/users";
 import "./SignUp.css";
-import Layout from '../../components/shared/Layout/Layout';
+import Layout from "../../components/shared/Layout/Layout";
 
 const SignUp = (props) => {
   const history = useHistory();
@@ -29,7 +29,7 @@ const SignUp = (props) => {
     signUp(form)
       .then(() => signIn(form))
       .then((user) => setUser(user))
-      .then(() => history.push("/storefront-social"))
+      .then(() => history.push("/storefront-social/posts"))
       .catch((error) => {
         console.error(error);
         setForm({
@@ -58,7 +58,6 @@ const SignUp = (props) => {
   const { email, username, password, passwordConfirmation } = form;
 
   return (
-    
     <div className="form-container">
       <h3>sign up</h3>
       <form onSubmit={onSignUp}>
@@ -100,8 +99,7 @@ const SignUp = (props) => {
         />
         {renderError()}
       </form>
-      </div>
-      
+    </div>
   );
 };
 
