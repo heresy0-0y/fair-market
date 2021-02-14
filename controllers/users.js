@@ -68,7 +68,7 @@ const verify = async (req, res) => {
     if (payload) {
       res.json(payload);
     }
-  } catch (e) {
+  } catch (error) {
     res.status(401).send("Not Authorized");
   }
 };
