@@ -29,7 +29,7 @@ const SignUp = (props) => {
     signUp(form)
       .then(() => signIn(form))
       .then((user) => setUser(user))
-      .then(() => history.push("/storefront-social"))
+      .then(() => history.push("/storefront-social/posts"))
       .catch((error) => {
         console.error(error);
         setForm({
