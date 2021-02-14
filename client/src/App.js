@@ -29,6 +29,8 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Storefront user={user} />
+          {/* till we build storefront */}
+          <Redirect to="/storefront-social" />
         </Route>
         <Route path="/signup">
           <SignUp setUser={setUser} />
@@ -46,7 +48,11 @@ function App() {
           {user ? <PostCreate user={user} /> : <Redirect to="/signup" />}
         </Route>
         <Route exact path="/storefront-social/posts/:id/edit">
-          {user ? <PostEdit user={user} /> : <Redirect to="/" />}
+          {user ? (
+            <PostEdit user={user} />
+          ) : (
+            <Redirect to="/storefront-social" />
+          )}
         </Route>
         <Route exact path="/storefront-social/posts/:id">
           <PostDetail user={user} />
