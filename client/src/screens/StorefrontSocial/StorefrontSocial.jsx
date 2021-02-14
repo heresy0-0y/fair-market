@@ -10,6 +10,7 @@ import Layout from "../../components/shared/Layout/Layout";
 import Post from "../../components/Post/Post";
 import Sort from "../../components/Sort/Sort";
 import Search from "../../components/Search/Search";
+import "./StorefrontSocial.css";
 
 const StorefrontSocial = (props) => {
   const [allPosts, setAllPosts] = useState([]);
@@ -55,22 +56,25 @@ const StorefrontSocial = (props) => {
   const handleSubmit = (event) => event.preventDefault();
 
   const postsJSX = queriedPosts.map((post, index) => (
-    <Post
-      _id={post._id}
-      subject={post.subject}
-      content={post.content}
-      key={index}
-    />
+    <div className="single-post">
+      <Post
+        className="post-of-posts"
+        _id={post._id}
+        subject={post.subject}
+        content={post.content}
+        key={index}
+      />
+    </div>
   ));
 
   return (
     <div className="layout">
-    <Layout user={props.user}>
-      <Search onSubmit={handleSubmit} onChange={handleSearch} />
-      <Sort onSubmit={handleSubmit} onChange={handleSort} />
-      <div className="Posts">{postsJSX}</div>
+      <Layout user={props.user}>
+        <Search onSubmit={handleSubmit} onChange={handleSearch} />
+        <Sort onSubmit={handleSubmit} onChange={handleSort} />
+        <div className="storefront-social-posts">{postsJSX}</div>
       </Layout>
-      </div>
+    </div>
   );
 };
 

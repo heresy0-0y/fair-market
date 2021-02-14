@@ -7,38 +7,16 @@
   justify-content: space-evenly;
 }
 
-input:focus, textarea:focus, select:focus {
-  outline: none;
-}
 
-input, textarea {
-  font-size: 48px;
+.input-subject, .textarea-content {
+  font-size: 1.4em;
   font-family: Comfortaa;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: hidden;
-}
-
-textarea {
-  font-size: 24px;
-  font-family: Comfortaa;
-}
-
-.input-name {
-  font-size: 48px;
-  font-family: Comfortaa;
-}
-
-.input-price {
-  padding-left: 10px;
-  font-size: 24px;
-  font-family: Comfortaa;
-}
-
-.input-image-link {
-  font-size: 18px;
-  font-family: Comfortaa;
+  
+  
 }
 
 .submit-button {
@@ -53,13 +31,3 @@ textarea {
   cursor: pointer;
 }
 
-
-@media (max-width: 500px) {
-  .create-form {
-      padding-top: 150px;
-  }
-  
-  input, textarea {
-      font-size: 28px;
-  }
-}

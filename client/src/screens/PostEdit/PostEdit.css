@@ -1,109 +1,46 @@
-.textarea-content {
-  margin-top: 25px;
+.edit-textarea-content,
+.edit-input-subject {
+  font-family: "Comfortaa";
+  color: #ffd5ac;
+  background-color: #134762;
+  margin-top: 0.4rem;
+  text-align: center;
 }
 .post-edit {
   display: flex;
-  padding: 100px;
-  padding-top: 80px;
-  margin-top: 50px;
-}
-
-.post-container {
-  display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
-  text-decoration: none;
+  margin-top: 20px;
+}
+
+.subject-container {
   font-family: Comfortaa;
-  color: #FFC3B4;
+  color: #ffc3b4;
   background-color: #134762;
-  padding: 50px;
-  box-shadow: 5px 5px #FFC3B4;
-
-
-}
-
-.post-container:hover {
-  transform: scale(1.2)
-
-}
-
-.post-container a {
-
-  text-decoration: none;
-  font-family: Comfortaa;
-  color: #FFC3B4;
-  text-shadow: 2px 2px 1px #134762;
-}
-
-.subject-container{
-  font-family: Comfortaa;
-  color: #FFC3B4;
-  text-decoration: none;
-
 }
 .content-container {
   font-family: Comfortaa;
-  color: #FFC3B4;
+  color: #ffc3b4;
+  background-color: #134762;
+}
+.date-container {
+  font-family: Comfortaa;
+  color: #ffc3b4;
+  background-color: #134762;
   text-decoration: none;
-
-
-}
-.dare-container {
-  font-family: Comfortaa;
-  color: #FFC3B4;
-  text-decoration: none;
-
-}
-
-.textarea-content {
-
-  font-family: Comfortaa;
-  color: #FFC3B4;
-  text-decoration: none;  
-}
-
-.edit-post-image {
-  width: 500px;
-  padding: 0 40px;
-  padding-bottom: 5px;
-  margin-top: 50px;
-  text-decoration: none; 
-}
-
-.edit-input-image-link {
-  width: 300px;
-  text-align: center;
-  font-size: 20px;
-  font-family: Comfortaa;
-  margin-top: 50px;
-  text-decoration: none; 
 }
 
 .edit-form {
+  display: flex;
+  flex-direction: column;
   font-family: Comfortaa;
   line-height: 1.6;
-  margin-top: 50px;
-  text-decoration: none; 
-}
-
-.input-name {
+  margin-top: 10px;
+  text-decoration: none;
   font-family: Comfortaa;
-  font-size: 64px;
-  letter-spacing: 1px;
-  padding: 5px;
-  margin-top: 50px;
-  text-decoration: none; 
-}
-
-.textarea-description {
-  font-family: Comfortaa;
-  font-size: 16px;
-  padding: 10px;
-  letter-spacing: .9px;
-  line-height: 1.6;
-  margin-top: 50px;
-  text-decoration: none; 
+  color: #ffc3b4;
+  padding: 50px;
+  box-shadow: 5px 5px #ffc3b4;
 }
 
 .save-button {
@@ -115,31 +52,6 @@
   background-color: black;
   color: white;
   border: none;
-  box-shadow: 2px 2px 10px 2px #318B9E;
+  box-shadow: 2px 2px 10px 2px #318b9e;
   cursor: pointer;
-}
-
-@media (max-width: 500px) {
-  .input-name {
-      margin-left: -10px;
-      padding-left: -10px;
-      font-size: 26px;
-  }
-  .edit-form {
-      padding: 0px;
-  }
-  .textarea-description {
-      width: 100%;
-      padding: 0px;
-  }
-  .post-edit {
-      width: 100%;
-      flex-direction: column;
-  }
-  .image-container {
-      width: 100%;
-  }
-  .edit-post-image {
-      width: 300px;
-  }
 }

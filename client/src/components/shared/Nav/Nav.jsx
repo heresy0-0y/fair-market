@@ -26,7 +26,7 @@ const unauthenticatedOptions = (
 
 const alwaysOptions = (
   <>
-    <NavLink className="link" to="/storefront-social/posts">
+    <NavLink className="link" to="/storefront-social">
       Posts
     </NavLink>
   </>
@@ -36,7 +36,7 @@ const Nav = ({ user }) => {
   return (
     <nav>
       <div className="nav">
-        <NavLink className="logo" to="/storefront-social/posts">
+        <NavLink className="logo" to="/storefront-social">
           Storefront Social
         </NavLink>
         <div className="links">

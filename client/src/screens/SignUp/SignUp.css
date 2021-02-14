@@ -1,17 +1,18 @@
 * {box-sizing: border-box}
   /* Full-width input fields */
     input[type=text], input[type=password] {
-    width: 95%;
-    padding: 15px;
+    width: 25%;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
-    background: #F1F1F1;
+    color: #FFD5AC;
+    background-color: #134762;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 15px;
   }
   .form-container {
     font-family: 'Comfortaa';
+    font-size: 1em;
     color: #FFD5AC;
     background-color: #318B9E;
     height: 100vh;
@@ -23,25 +24,25 @@
   .h3 {
     font-size: larger;
   }
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  hr {
+  
+  /* hr {
     border: 1px solid #F1F1F1;
     margin-bottom: 25px;
-  }
+  } */
   /* Set a style for all buttons */
   button {
+    width: 25%;
     background-color: #27CFA4;
     color: #FFD5AC;
     font-family: 'Comfortaa';
+    font-size: 1em;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    border-radius: 25px;
   }
   button:hover {
     opacity:1;
