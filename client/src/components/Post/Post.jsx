@@ -6,9 +6,13 @@ const Post = (props) => {
     <div className="post-large-container">
       <div className="post-container">
         <Link to={`/storefront-social/posts/${props._id}`}>
-          <div>{props.subject}</div>
-          <div>{props.createdAt}</div>
-          <div>{props.content}</div>
+          <div className="post-wrap">
+            <div className="post-preview">
+              <p>{props.subject}</p>
+              <p>{props.createdAt}</p>
+              <p>{props.content}</p>
+            </div>
+          </div>
         </Link>
       </div>
     </div>
