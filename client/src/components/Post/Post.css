@@ -2,14 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 2cm;
-  background-color: antiquewhite;
-  
-
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: Comfortaa;
+  color: #ffc3b4;
+  background-color: #134762;
+  padding: 50px;
+  box-shadow: 5px 5px #ffc3b4;
 }
 
-.post-large-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.post-container:hover {
+  transform: scale(1.2);
+}
+
+.post-container a {
+  text-decoration: none;
+  font-family: Comfortaa;
+  color: #ffc3b4;
+  text-shadow: 2px 2px 1px #134762;
 }
