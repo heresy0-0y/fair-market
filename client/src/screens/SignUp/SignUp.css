@@ -1,114 +1,70 @@
-* {
-  box-sizing: border-box;
-}
-/* Full-width input fields */
-input[type="text"],
-input[type="password"] {
-  width: 25%;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  color: #ffd5ac;
-  background-color: #134762;
-  text-align: center;
-  border-radius: 25px;
-}
-
-
-input .input-signup {
-  color: #ffd5ac;
-  background-color: #134762;
-  text-align: center;
-  border-radius: 15px;
-}
-
-.email {
-
-  font-family: "Comfortaa";
-  font-size: 1em;
-  color: #ffd5ac;
-  background-color: #318b9e;
-  height: 100vh;
-  text-align: center;
-}
-.form-container {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  font-family: "Comfortaa";
-  font-size: 1em;
-  color: #ffd5ac;
-  background-color: #318b9e;
-  height: 100vh;
-  text-align: center;
- 
+* {box-sizing: border-box}
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+    width: 25%;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    color: #FFD5AC;
+    background-color: #134762;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .form-container {
+    font-family: 'Comfortaa';
+    font-size: 1em;
+    color: #FFD5AC;
+    background-color: #318B9E;
+    height: 100vh;
+    text-align: center;
+  }
+  .label {
+    padding-top: 50;
+  }
+  .h3 {
+    font-size: larger;
+  }
   
-}
-
-
-label {
-  padding-top: 50;
-  color: #ffd5ac;
-  background-color: #318b9e;
-  height: 100vh;
-  text-align: center;
-  text-shadow: 2px 2px 1px #134762;
-}
-.signup-heading {
-  margin-top: 80px;
-  font-size: 24px;
-  text-align: center;
-  text-shadow: 2px 2px 1px #134762;
-}
-
-.form {
-  color: #ffd5ac;
-  background-color: #318b9e;
-  height: 100vh;
-  text-align: center;
-}
-
-/* hr {
+  /* hr {
     border: 1px solid #F1F1F1;
     margin-bottom: 25px;
   } */
-/* Set a style for all buttons */
-button {
-  width: 25%;
-  background-color: #27cfa4;
-  color: #ffd5ac;
-  font-family: "Comfortaa";
-  text-shadow: 2px 2px 1px #134762;
-  font-size: 1em;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-  border-radius: 25px;
-}
-button:hover {
-  opacity: 1;
-}
-/* Float cancel and signup buttons and add an equal width */
-.signupbtn {
-  float: left;
-  width: 50%;
-}
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .signupbtn {
+  /* Set a style for all buttons */
+  button {
+    width: 25%;
+    background-color: #27CFA4;
+    color: #FFD5AC;
+    font-family: 'Comfortaa';
+    font-size: 1em;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
     width: 100%;
+    opacity: 0.9;
+    border-radius: 25px;
   }
-}
+  button:hover {
+    opacity:1;
+  }
+  /* Float cancel and signup buttons and add an equal width */
+  .signupbtn {
+    float: left;
+    width: 50%;
+  }
+  /* Add padding to container elements */
+  .container {
+    padding: 16px;
+  }
+  /* Clear floats */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* Change styles for cancel button and signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .signupbtn {
+      width: 100%;
+    }
+  }
