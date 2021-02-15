@@ -1,20 +1,25 @@
 .search-form {
-  padding-top: 100px;
+  padding-top: 2px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 40vw;
+  margin-top: 10px;
+
 }
 
-.search-input {
-  width: 65vw;
+input.search-input {
+  
   font-size: 18px;
   letter-spacing: 0.1px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #89858B;
   margin: 40px;
+  background-color: #134762;
+  color: #FFD5AC;
 }
 
 .search-input::placeholder {
-  letter-spacing: .3px;
+  color: #FFD5AC;
 }

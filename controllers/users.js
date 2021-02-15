@@ -8,6 +8,15 @@ db.on("error", console.error.bind(console, "MongoDB connection error:"));
 const SALT_ROUNDS = 11;
 const TOKEN_KEY = "areallylonggoodkey";
 
+const getUsers = async (req, res) => {
+  try {
+    const users = await User.find().populate("posts");
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
 const signUp = async (req, res) => {
   try {
     const { username, email, password } = req.body;
@@ -59,7 +68,7 @@ const verify = async (req, res) => {
     if (payload) {
       res.json(payload);
     }
-  } catch (e) {
+  } catch (error) {
     res.status(401).send("Not Authorized");
   }
 };
@@ -71,4 +80,5 @@ module.exports = {
   signIn,
   verify,
   changePassword,
+  getUsers,
 };

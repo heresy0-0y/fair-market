@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
-import { LikeButton, Provider } from "@lyket/react";
+import "./Post.css";
 
 const Post = (props) => {
   return (
-    <div className = "post-large-container">
-    <div className="post-container">
-      <Link to={`/storefront-social/posts/${props._id}`}>
-        <div>{props.subject}</div>
-        <div>{props.createdAt}</div>
-          <div>{props.content}</div>
-          {/* <Provider apiKey="399b32917e64940844091fa308648b">
-              <ClapButton id="likeme"  namespace="post"/>
-              
-                </Provider> */}
-      </Link>
+    <div className="post-large-container">
+      <div className="post-container">
+        <Link to={`/storefront-social/posts/${props._id}`}>
+          <div className="post-wrap">
+            <div className="post-preview">
+              <p>{props.subject}</p>
+              <p>{props.createdAt}</p>
+              <p>{props.content}</p>
+            </div>
+          </div>
+        </Link>
       </div>
-      </div>
+    </div>
   );
 };
 

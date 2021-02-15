@@ -15,6 +15,7 @@ const PostCreate = (props) => {
     const { name, value } = event.target;
     setPost({
       ...post,
+      userId: props.user,
       [name]: value,
     });
   };
@@ -47,7 +48,9 @@ const PostCreate = (props) => {
           required
           onChange={handleChange}
         />
-        <button type='submit' className="submit-button">Submit</button>
+        <button type="submit" className="submit-button">
+          Submit
+        </button>
       </form>
     </Layout>
   );

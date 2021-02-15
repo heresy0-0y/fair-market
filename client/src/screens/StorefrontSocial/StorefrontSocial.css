@@ -1,5 +1,25 @@
-/* .layout {
-
-
+.storefront-social-posts {
+  column-count: 3;
+  column-gap: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr auto; */
+  break-inside: avoid;
 }
- */
+
+.single-post {
+  margin: 5px;
+  height: auto;
+  width: 97%;
+}
+
+div.single-post > div.post-of-posts {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  display: block;
+  height: auto;
+}
+
+.post-of-posts {
+  text-align: center;
+}
