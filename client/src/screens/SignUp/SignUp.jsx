@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { signIn, signUp } from "../../services/users";
 import "./SignUp.css";
 import Layout from "../../components/shared/Layout/Layout";
+import Nav from "../../components/shared/Nav/Nav";
 
 const SignUp = (props) => {
   const history = useHistory();
@@ -60,9 +61,10 @@ const SignUp = (props) => {
   return (
     <Layout>
       <div className="form-container">
-        <h3>sign up</h3>
+        <div className="signup-heading">Sign Up</div>
+        <br />
         <form onSubmit={onSignUp}>
-          <label>username</label>
+          <label>Username</label>
           <input
             className="input-signup"
             required
@@ -72,8 +74,10 @@ const SignUp = (props) => {
             placeholder="type username here"
             onChange={handleChange}
           />
-          <label>email address</label>
-          <input
+          
+          <br />
+          <label>Email address</label>
+          <input className="email"
             className="input-signup"
             required
             type="email"
@@ -82,7 +86,9 @@ const SignUp = (props) => {
             placeholder="type email here"
             onChange={handleChange}
           />
-          <label>password</label>
+          <br />
+          <br />
+          <label>Password</label>
           <input
             className="input-signup"
             required
@@ -92,6 +98,7 @@ const SignUp = (props) => {
             placeholder="password"
             onChange={handleChange}
           />
+          <br />
           <label>Password Confirmation</label>
           <input
             className="input-signup"
