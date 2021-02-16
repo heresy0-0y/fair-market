@@ -48,7 +48,7 @@ const StorefrontSocial = (props) => {
 
   const handleSearch = (event) => {
     const newQueriedPosts = allPosts.filter((post) =>
-      post.name.toLowerCase().includes(event.target.value.toLowerCase())
+      post.subject.toLowerCase().includes(event.target.value.toLowerCase())
     );
     setQueriedPosts(newQueriedPosts, () => handleSort(sortType));
   };
