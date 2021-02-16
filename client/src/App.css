@@ -2,3 +2,7 @@ body {
   width: 100vw;
   background-color: #33749b;
 }
+
+label {
+  font-family: "Comfortaa";
+}
