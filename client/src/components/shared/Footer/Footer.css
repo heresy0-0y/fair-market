@@ -6,5 +6,7 @@ footer {
   background-color: #2ab8a2;
   color: #134762;
   font-family: "Comfortaa";
-
+  margin-bottom: 0;
+  margin-left: 0;
+  /* position: absolute; */
 }
