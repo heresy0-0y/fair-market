@@ -40,7 +40,7 @@ const Nav = ({ user }) => {
           Storefront Social
         </NavLink>
         <div className="links">
-          {user && <div className="link welcome">Welcome, {user.username}</div>}
+          {user && <div className="linkwelcome">Welcome, {user.username}</div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>

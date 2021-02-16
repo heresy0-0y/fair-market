@@ -30,6 +30,7 @@ const PostDetail = (props) => {
           <div className="subject">{post.subject}</div>
           <div className="date">{post.createdAt}</div>
           <div className="content">{`${post.content}`}</div>
+          </div>
           <div className="button-container">
             <button className="edit-button">
               <Link
@@ -50,7 +51,7 @@ const PostDetail = (props) => {
               Delete
             </button>
           </div>
-        </div>
+        
       </div>
     </Layout>
   );
