@@ -15,13 +15,13 @@ import "./StorefrontSocial.css";
 const StorefrontSocial = (props) => {
   const [allPosts, setAllPosts] = useState([]);
   const [queriedPosts, setQueriedPosts] = useState([]);
-  const [sortType, setSortType] = useState([]);
+  const [sortType, setSortType] = useState("most-recent");
 
   useEffect(() => {
     const fetchPosts = async () => {
       const Posts = await getPosts();
       setAllPosts(Posts);
-      setQueriedPosts(Posts);
+      setQueriedPosts(mostRecent(Posts));
     };
     fetchPosts();
   }, []);
@@ -42,6 +42,7 @@ const StorefrontSocial = (props) => {
         setQueriedPosts(sociallyEngaged(queriedPosts));
         break;
       default:
+        setQueriedPosts(mostRecent(queriedPosts));
         break;
     }
   };
