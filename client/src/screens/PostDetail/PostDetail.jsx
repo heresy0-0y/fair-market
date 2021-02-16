@@ -6,6 +6,7 @@ import { useParams, useHistory, Link } from "react-router-dom";
 
 const PostDetail = (props) => {
   const [post, setPost] = useState(null);
+  const [datePosted, setDatePosted] = useState("");
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
   const history = useHistory();
@@ -15,6 +16,10 @@ const PostDetail = (props) => {
       const post = await getPost(id);
       setPost(post);
       setLoaded(true);
+      const postedDate = new Date(post.createdAt);
+      const dateString =
+        postedDate.toLocaleDateString() + " " + postedDate.toLocaleTimeString();
+      setDatePosted(dateString);
     };
     fetchPost();
   }, [id]);
@@ -28,30 +33,29 @@ const PostDetail = (props) => {
       <div className="post-detail">
         <div className="detail">
           <div className="subject">{post.subject}</div>
-          <div className="date">{post.createdAt}</div>
+          <div className="date">{datePosted}</div>
           <div className="content">{`${post.content}`}</div>
-          </div>
-          <div className="button-container">
-            <button className="edit-button">
-              <Link
-                className="edit-link"
-                to={`/storefront-social/posts/${post._id}/edit`}
-              >
-                Edit
-              </Link>
-            </button>
-            <button
-              className="delete-button"
-              onClick={() =>
-                deletePost(post._id).then(() =>
-                  history.push("/storefront-social")
-                )
-              }
+        </div>
+        <div className="button-container">
+          <button className="edit-button">
+            <Link
+              className="edit-link"
+              to={`/storefront-social/posts/${post._id}/edit`}
             >
-              Delete
-            </button>
-          </div>
-        
+              Edit
+            </Link>
+          </button>
+          <button
+            className="delete-button"
+            onClick={() =>
+              deletePost(post._id).then(() =>
+                history.push("/storefront-social")
+              )
+            }
+          >
+            Delete
+          </button>
+        </div>
       </div>
     </Layout>
   );
