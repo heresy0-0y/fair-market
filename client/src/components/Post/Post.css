@@ -10,6 +10,7 @@
   background-color: #134762;
   padding: 10px;
   box-shadow: 5px 5px #ffc3b4;
+  transition: 0.3s ease-in-out;
 }
 
 .post-wrap {
