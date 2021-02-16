@@ -1,7 +1,7 @@
 * {box-sizing: border-box}
   /* Full-width input fields */
     input[type=text], input[type=password] {
-    width: 65%;
+    width: 90%;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
@@ -12,7 +12,7 @@
     padding: 15px;
   }
   .input-signup {
-    width: 65%;
+    width: 85%;
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
@@ -27,18 +27,20 @@
     font-size: 1em;
     color: #FFD5AC;
     background-color: #318B9E;
-    height: 75vh;
+    height: 95vh;
     text-align: center;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     margin-top: 85px;
+    padding: 10px;
   }
   .label {
     padding-top: 50;
   }
-  .h3 {
-    font-size: larger;
+  h3 {
+    font-size: 35px;
+    
   }
   
   
@@ -57,7 +59,7 @@
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
     opacity: 0.9;
     border-radius: 25px;
   }
