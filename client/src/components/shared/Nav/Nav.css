@@ -9,8 +9,14 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  
+
   text-shadow: 2px 2px 1px #134762;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .nav {
@@ -26,6 +32,85 @@ nav {
   flex-direction: row;
 }
 
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+.snack-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  align-items: center;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+.bm-tiem-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
 .logo {
   font-family: Comfortaa;
   text-align: center;
@@ -78,22 +163,18 @@ nav {
 }
 select.sort {
   box-shadow: 2px 2px 10px 2px #89858b;
-  color: #FFD5AC;
+  color: #ffd5ac;
   background-color: #134762;
   font-family: "Comfortaa";
   font-size: 14px;
   margin-top: 10px;
   border-radius: 25px;
-  
 }
 .linkwelcome {
-  
   color: #ffd5ac;
   font-family: "Comfortaa";
   align-items: stretch;
   padding-bottom: 10px;
- 
-
 }
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -167,7 +248,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 nav {
   display: none;
-
 }
 .snackBar {
   opacity: 1;
@@ -175,11 +255,8 @@ nav {
   flex-direction: column;
 }
 
-#home {
-  background-color: orange;
-}
 
-@media only screen and (min-width: 768px) {
+@@media only screen and (min-width: 769px) {
   .bm-burger-button {
     display: none;
   }
@@ -187,8 +264,4 @@ nav {
     display: initial;
   
   }
-
-
-  
 }
-

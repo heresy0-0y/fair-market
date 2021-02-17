@@ -1,8 +1,8 @@
 import React from "react";
 import "./Nav.css";
-import { NavLink , Link } from "react-router-dom";
-import Menu from 'react-burger-menu/lib/menus/slide';
-import Navbar from 'react-bootstrap/Navbar';
+import { NavLink } from "react-router-dom";
+import Menu from "react-burger-menu/lib/menus/slide";
+
 
 const authenticatedOptions = (
   <>
@@ -41,35 +41,35 @@ const Nav = ({ user }) => {
       <Menu itemListElement="div" >
         
       <div className="snackBar">
-      <NavLink className="logo" to="/storefront-social">
-          Storefront Social
-        </NavLink>
-        <div className="links">
-          {user && <div className="linkwelcome">Welcome, {user.username}</div>}
-          {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
-        </div>
+        <Menu classname="snack-menu" itemListElement="div">
+          <NavLink className="logo" to="/storefront-social">
+            Storefront Social
+          </NavLink>
+          <div className="links">
+            {user && (
+              <div className="linkwelcome">Welcome, {user.username}</div>
+            )}
+            {alwaysOptions}
+            {user ? authenticatedOptions : unauthenticatedOptions}
           </div>
-          
-      </Menu>
-      
-      
-      
-   
-        <nav>
-      <div className="nav">
-        <NavLink className="logo" to="/storefront-social">
-          Storefront Social
-        </NavLink>
-        <div className="links">
-          {user && <div className="linkwelcome">Welcome, {user.username}</div>}
-          {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
+        </Menu>
+      </div>
+      <nav>
+        <div className="nav">
+          <NavLink className="logo" to="/storefront-social">
+            Storefront Social
+          </NavLink>
+          <div className="links">
+            {user && (
+              <div className="linkwelcome">Welcome, {user.username}</div>
+            )}
+            {alwaysOptions}
+            {user ? authenticatedOptions : unauthenticatedOptions}
+          </div>
         </div>
-        </div>
-        
+
       </nav>
-      </>
+    </>
   );
 };
 
