@@ -29,7 +29,7 @@ const SignUp = (props) => {
     signUp(form)
       .then(() => signIn(form))
       .then((user) => setUser(user))
-      .then(() => history.push("/storefront-social/posts"))
+      .then(() => history.push("/storefront-social/"))
       .catch((error) => {
         console.error(error);
         setForm({
@@ -72,7 +72,7 @@ const SignUp = (props) => {
             placeholder="type username here"
             onChange={handleChange}
           />
-          <br/>
+          <br />
           <label>email address</label>
           <input
             className="input-signup"
@@ -83,7 +83,7 @@ const SignUp = (props) => {
             placeholder="type email here"
             onChange={handleChange}
           />
-          <br/>
+          <br />
           <label>password</label>
           <input
             className="input-signup"
@@ -94,7 +94,7 @@ const SignUp = (props) => {
             placeholder="password"
             onChange={handleChange}
           />
-          <br/>
+          <br />
           <label>Password Confirmation</label>
           <input
             className="input-signup"
