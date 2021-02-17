@@ -6,6 +6,7 @@ const Footer = () => <footer>
     <div className="devs">
       created by: hera sey, Ghelila Mascio, Ayeesha Perez, Katharine Chandler
     </div>
+    <div className="full-bleed"></div>
   </div>
 </footer>;
 
