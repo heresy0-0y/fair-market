@@ -1,6 +1,6 @@
 const db = require("../db/connection");
-const Post = require("../models/post");
 const User = require("../models/user");
+const Post = require("../models/post");
 
 db.on(
   "error",
