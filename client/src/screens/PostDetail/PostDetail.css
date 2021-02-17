@@ -1,0 +1,34 @@
+.post-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 20px;
+  
+}
+.subject , .date , .content {
+font-family: 'Comfortaa';
+padding: 10px;
+color: #ffd5ac;
+text-shadow: 2px 2px #134762;
+
+}
+
+.subject {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content {
+  font-weight: 600;
+}
+.detail {
+  border-radius: coral;
+  padding-bottom: 20px;
+}
+.post-detail , .edit-link {
+  text-decoration: none;
+  color: #FFD5AC
+}

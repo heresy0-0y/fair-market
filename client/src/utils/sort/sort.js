@@ -1,17 +1,16 @@
 const compareKey = (key) => (a, b) => {
-  if (a[key] < b[key]) {
-    return -1;
-  }
-  if (a[key] > b[key]) {
+  const dateA = new Date(a[key]);
+  const dateB = new Date(b[key]);
+  if (Date.parse(dateA) < Date.parse(dateB)) {
     return 1;
   }
-  return 0;
+  if (Date.parse(dateA) > Date.parse(dateB)) return -1;
 };
 
+export const mostRecent = (arr) => arr.sort(compareKey("createdAt"));
 // one liner
 // const compareKey = key => (a, b) => a[key] == b[key]? (a[key] < b[key] ? -1 : 1) : 0
 
-export const mostRecent = (arr) => arr.sort(compareKey("createdAt"));
 export const mostOld = (arr) => arr.sort(compareKey("createdAt")).reverse();
 export const lonelyPostsFirst = (arr) =>
   arr.sort((a, b) => parseInt(a.createdAt) - parseInt(b.createdAt));

@@ -8,6 +8,7 @@ const PostCreate = (props) => {
   const [post, setPost] = useState({
     subject: "",
     content: "",
+    userId: props.user.id,
   });
   const [isCreated, setCreated] = useState(false);
 
@@ -15,7 +16,7 @@ const PostCreate = (props) => {
     const { name, value } = event.target;
     setPost({
       ...post,
-      userId: props.user,
+      userId: props.user.id,
       [name]: value,
     });
   };
@@ -26,7 +27,7 @@ const PostCreate = (props) => {
     setCreated({ created });
   };
   if (isCreated) {
-    return <Redirect to={`/storefront-social/posts`} />;
+    return <Redirect to={`/storefront-social`} />;
   }
   return (
     <Layout user={props.user}>

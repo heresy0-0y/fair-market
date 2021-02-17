@@ -1,70 +1,90 @@
-* {box-sizing: border-box}
-  /* Full-width input fields */
-    input[type=text], input[type=password] {
-    width: 25%;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    color: #FFD5AC;
-    background-color: #134762;
-    text-align: center;
-    border-radius: 15px;
-  }
-  .form-container {
-    font-family: 'Comfortaa';
-    font-size: 1em;
-    color: #FFD5AC;
-    background-color: #318B9E;
-    height: 100vh;
-    text-align: center;
-  }
-  .label {
-    padding-top: 50;
-  }
-  .h3 {
-    font-size: larger;
-  }
-  
-  /* hr {
+* {
+  box-sizing: border-box;
+}
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  color: #ffd5ac;
+  background-color: #134762;
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+}
+.input-signup {
+  width: 85%;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  color: #ffd5ac;
+  background-color: #134762;
+  text-align: center;
+  border-radius: 15px;
+  padding: 15px;
+}
+.form-container {
+  font-family: "Comfortaa";
+  font-size: 1em;
+  color: #ffd5ac;
+  background-color: #318b9e;
+  height: 95vh;
+  text-align: center;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  margin-top: 85px;
+  padding: 10px;
+}
+.label {
+  padding-top: 50;
+}
+h3 {
+  font-size: 35px;
+}
+
+/* hr {
     border: 1px solid #F1F1F1;
     margin-bottom: 25px;
   } */
-  /* Set a style for all buttons */
-  button {
-    width: 25%;
-    background-color: #27CFA4;
-    color: #FFD5AC;
-    font-family: 'Comfortaa';
-    font-size: 1em;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    border-radius: 25px;
-  }
-  button:hover {
-    opacity:1;
-  }
-  /* Float cancel and signup buttons and add an equal width */
+/* Set a style for all buttons */
+button {
+  width: 25%;
+  background-color: #27cfa4;
+  color: #ffd5ac;
+  font-family: "Comfortaa";
+  font-size: 1em;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  opacity: 0.9;
+  border-radius: 25px;
+}
+button:hover {
+  opacity: 1;
+}
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn {
+  float: left;
+  width: 50%;
+}
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
   .signupbtn {
-    float: left;
-    width: 50%;
+    width: 100%;
   }
-  /* Add padding to container elements */
-  .container {
-    padding: 16px;
-  }
-  /* Clear floats */
-  .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  /* Change styles for cancel button and signup button on extra small screens */
-  @media screen and (max-width: 300px) {
-    .signupbtn {
-      width: 100%;
-    }
-  }
+}

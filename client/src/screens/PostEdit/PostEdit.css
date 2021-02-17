@@ -5,12 +5,16 @@
   background-color: #134762;
   margin-top: 0.4rem;
   text-align: center;
+  padding: 10px;
 }
 .post-edit {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
+  font-family: 'Comfortaa';
+color: #ffd5ac;
+text-shadow: 2px 2px #134762;
 }
 
 .subject-container {
@@ -44,14 +48,20 @@
 }
 
 .save-button {
-  font-size: 22px;
+  font-size: 18px;
   font-family: Comfortaa;
   height: 40px;
-  width: 200px;
   margin-top: 40px;
-  background-color: black;
-  color: white;
+  background-color: #134762;
+  color: #FFC3B4;
   border: none;
-  box-shadow: 2px 2px 10px 2px #318b9e;
+  box-shadow: 2px 2px 10px 2px #89858b;
   cursor: pointer;
+}
+.subject-container , .content-container , .date-container {
+  padding: 15px;
+}
+
+.post-edit h4 {
+font-size: 30px;  
 }

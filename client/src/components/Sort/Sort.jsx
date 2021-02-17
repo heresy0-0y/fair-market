@@ -7,7 +7,7 @@ const Sort = (props) => {
 
   return (
     <form className="sort-container" onSubmit={props.handleSubmit}>
-      <label htmlFor="sort">SORT BY:</label>
+      <label htmlFor="sort by">SORT BY:</label>
       <select className="sort" onChange={handleChange}>
         <option className="option" value="most-recent">
           &nbsp; most recent&nbsp;

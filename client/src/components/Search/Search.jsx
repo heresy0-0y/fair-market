@@ -10,7 +10,6 @@ const Search = (props) => {
         name="Search"
         placeholder="Search"
         type="text"
-      
       />
     </form>
   );

@@ -43,9 +43,11 @@ const PostEdit = (props) => {
   return (
     <Layout user={props.user}>
       <div className="post-edit">
+        <h4>Edit a Post!</h4>
         <div className="subject-container">{post.subject}</div>
         <div className="content-container">{post.content}</div>
         <div className="date-container">{post.createdAt}</div>
+        </div>
         <div className="edit-form-container">
           <form className="edit-form" onSubmit={handleSubmit}>
             <input
@@ -70,7 +72,7 @@ const PostEdit = (props) => {
               Save
             </button>
           </form>
-        </div>
+        
       </div>
     </Layout>
   );
