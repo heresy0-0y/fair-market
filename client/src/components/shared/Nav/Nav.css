@@ -147,7 +147,7 @@ nav {
     position: fixed;
     width: 100%;
     background-color: #2ab8a2;
-    z-index: auto;
+    z-index: 1;
     top: 0;
     left: 0;
     text-shadow: 2px 2px 1px #134762;
