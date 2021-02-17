@@ -6,14 +6,14 @@
   text-align: center;
   padding: 15px;
   padding-bottom: 20px;
-  
 }
-.subject , .date , .content {
-font-family: 'Comfortaa';
-padding: 10px;
-color: #ffd5ac;
-text-shadow: 2px 2px #134762;
-
+.subject,
+.date,
+.content {
+  font-family: "Comfortaa";
+  padding: 10px;
+  color: #ffd5ac;
+  text-shadow: 2px 2px #134762;
 }
 
 .subject {
@@ -28,7 +28,8 @@ text-shadow: 2px 2px #134762;
   border-radius: coral;
   padding-bottom: 20px;
 }
-.post-detail , .edit-link {
+.post-detail,
+.edit-link {
   text-decoration: none;
-  color: #FFD5AC
+  color: #ffd5ac;
 }

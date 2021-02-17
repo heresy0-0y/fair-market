@@ -10,3 +10,6 @@ body {
 label {
   font-family: "Comfortaa";
 }
+div {
+  overflow-y: scroll;
+}
