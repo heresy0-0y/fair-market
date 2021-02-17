@@ -1,6 +1,6 @@
 footer {
   display: flex;
-  justify-items: center;
+  align-items: center;
   padding: 20px;
   background-color: #2ab8a2;
   color: #134762;
@@ -9,6 +9,9 @@ footer {
   margin-left: 0;
   position: static;
   width: 100vw;
+}
+.devs {
+  text-align: center;
 }
 
 
