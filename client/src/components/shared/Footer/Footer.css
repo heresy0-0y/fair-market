@@ -7,7 +7,7 @@ footer {
   font-family: "Comfortaa";
   /* height: 100%; */
   /* margin-bottom: -50px; */
-  position: absolute;
+  position: sticky;
   bottom: 0;
   /* margin-bottom: -1rem; */
   width: 100%;
