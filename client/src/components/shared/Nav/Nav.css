@@ -255,13 +255,11 @@ nav {
   flex-direction: column;
 }
 
-
-@@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 769px) {
   .bm-burger-button {
     display: none;
   }
   nav {
     display: initial;
-  
   }
 }
