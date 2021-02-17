@@ -17,7 +17,7 @@ footer {
   text-align: center;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 500px) {
   footer {
     display: flex;
     /* align-items: center; */
@@ -29,6 +29,9 @@ footer {
     /* margin-bottom: -50px; */
     /* position: absolute; */
     /* bottom: 0; */
+    /* margin-bottom: -1rem; */
+    position: absolute;
+    bottom: 0;
     /* margin-bottom: -1rem; */
     width: 100%;
   }
