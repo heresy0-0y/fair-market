@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  width: 100%;
 }
 /* Full-width input fields */
 input[type="text"],
@@ -30,7 +31,6 @@ input[type="password"] {
   font-size: 1em;
   color: #ffd5ac;
   background-color: #318b9e;
-  height: 95vh;
   text-align: center;
   display: flex !important;
   flex-direction: column !important;
