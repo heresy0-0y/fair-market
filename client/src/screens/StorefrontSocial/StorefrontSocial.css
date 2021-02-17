@@ -1,10 +1,11 @@
 .storefront-social-posts {
-  column-count: 3;
-  column-gap: 2px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  column-count: 2;
+  column-gap: 12px;
+  grid-template-columns: 1fr 1fr;
   /* grid-template-rows: 1fr auto; */
   break-inside: avoid;
+  justify-content: center;
 }
 
 .single-post {
@@ -22,4 +23,11 @@ div.single-post > div.post-of-posts {
 
 .post-of-posts {
   text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+  .storefront-social-posts {
+    column-count: 3;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
