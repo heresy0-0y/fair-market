@@ -1,16 +1,14 @@
 footer {
   display: flex;
-  align-items: center;
-  padding: 20px;
+  /* align-items: center; */
+  padding: 15px;
   background-color: #2ab8a2;
   color: #134762;
   font-family: "Comfortaa";
-  margin-bottom: 0;
-  margin-left: 0;
+  margin-bottom: 10px;
   position: static;
   justify-content: center;
 }
-
 
 /* @media only screen and (min-width: 769px) {
   
