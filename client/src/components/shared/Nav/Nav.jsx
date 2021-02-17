@@ -3,6 +3,7 @@ import "./Nav.css";
 import { NavLink } from "react-router-dom";
 import Menu from "react-burger-menu/lib/menus/slide";
 
+
 const authenticatedOptions = (
   <>
     <NavLink className="link" to="/storefront-social/add-post">
@@ -36,6 +37,9 @@ const alwaysOptions = (
 const Nav = ({ user }) => {
   return (
     <>
+      
+      <Menu itemListElement="div" >
+        
       <div className="snackBar">
         <Menu classname="snack-menu" itemListElement="div">
           <NavLink className="logo" to="/storefront-social">
@@ -63,6 +67,7 @@ const Nav = ({ user }) => {
             {user ? authenticatedOptions : unauthenticatedOptions}
           </div>
         </div>
+
       </nav>
     </>
   );
