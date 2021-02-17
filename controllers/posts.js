@@ -33,7 +33,7 @@ const getPost = async (req, res) => {
 
 const createPost = async (req, res) => {
   try {
-    const post = await new Post(req.body);
+    const post = new Post(req.body);
     await post.save();
     res.status(201).json(post);
   } catch (error) {

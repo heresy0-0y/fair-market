@@ -8,7 +8,7 @@ const authenticatedOptions = (
     <NavLink className="link" to="/storefront-social/add-post">
       Add Post
     </NavLink>
-    <NavLink className="menu-item" to="/signout">
+    <NavLink className="link" to="/signout">
       Sign Out
     </NavLink>
   </>
@@ -37,15 +37,13 @@ const Nav = ({ user }) => {
   return (
     <>
       <div className="snackBar">
-        <Menu itemListElement="div">
-          <NavLink id="logo" className="menu-item" to="/storefront-social">
+        <Menu classname="snack-menu" itemListElement="div">
+          <NavLink className="logo" to="/storefront-social">
             Storefront Social
           </NavLink>
-          <div className="menu-item">
+          <div className="links">
             {user && (
-              <div id="linkwelcome" className="menu-item">
-                Welcome, {user.username}
-              </div>
+              <div className="linkwelcome">Welcome, {user.username}</div>
             )}
             {alwaysOptions}
             {user ? authenticatedOptions : unauthenticatedOptions}

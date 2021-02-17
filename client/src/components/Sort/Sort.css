@@ -19,11 +19,3 @@ select {
   margin: 20px;
   width: 25vw;
 }
-
-@media (max-width: 500px) {
-  .sort-container {
-    width: 100%;
-    justify-content: center;
-    margin: 0px;
-  }
-}

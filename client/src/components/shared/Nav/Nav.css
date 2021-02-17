@@ -13,6 +13,12 @@ nav {
   text-shadow: 2px 2px 1px #134762;
 }
 
+.links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -56,10 +62,17 @@ nav {
   background: #bdc3c7;
 }
 
+.snack-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /*
 Sidebar wrapper styles
 Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
 */
+
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
@@ -81,6 +94,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
+  align-items: center;
 }
 
 /* Individual item */
@@ -88,6 +102,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: inline-block;
 }
 
+.bm-tiem-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
@@ -165,7 +184,7 @@ nav {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .snackBar {
     opacity: 0;
   }

@@ -7,8 +7,8 @@ const getToken = () => {
 };
 
 const api = axios.create({
-  baseURL: "https://fair-market-backend.herokuapp.com/api",
-  // baseURL: "http://localhost:3000/api",
+  // baseURL: "https://fair-market-backend.herokuapp.com/api",
+  baseURL: "http://localhost:3000/api",
 });
 
 api.interceptors.request.use(
