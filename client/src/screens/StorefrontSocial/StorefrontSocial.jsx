@@ -71,7 +71,9 @@ const StorefrontSocial = (props) => {
   return (
     <Layout user={props.user}>
       <Search onSubmit={handleSubmit} onChange={handleSearch} />
-      <Sort onSubmit={handleSubmit} onChange={handleSort} />
+      <div className="sort">
+        <Sort onSubmit={handleSubmit} onChange={handleSort} />
+      </div>
       <div className="storefront-social-posts">{postsJSX}</div>
     </Layout>
   );
