@@ -5,21 +5,19 @@
   justify-content: center;
   align-items: center;
   width: 40vw;
-  margin-top: 50px
-
+  margin-top: 10px;
 }
 
 input.search-input {
-  
   font-size: 18px;
   letter-spacing: 0.1px;
   padding: 12px 20px 12px 40px;
-  border: 1px solid #89858B;
+  border: 1px solid #89858b;
   margin: 40px;
   background-color: #134762;
-  color: #FFD5AC;
+  color: #ffd5ac;
 }
 
 .search-input::placeholder {
-  color: #FFD5AC;
+  color: #ffd5ac;
 }

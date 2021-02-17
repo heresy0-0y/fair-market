@@ -1,11 +1,12 @@
 .sort-container {
   display: flex;
   /*  */
-  justify-content: flex-end;
+  /* justify-items: space-around; */
   /* margin: 20px; */
 }
 
 label {
+  margin-left: 1rem;
   font-size: 18px;
   font-family: Consolataa;
   font-weight: bold;
@@ -17,5 +18,5 @@ select {
   border: none;
   font-size: 18px;
   margin: 20px;
-  width: 25vw;
+  width: 40vw;
 }
