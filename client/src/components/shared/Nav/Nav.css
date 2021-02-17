@@ -9,12 +9,12 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #373a47;
+  background: #2ab8a2;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #a90000;
+  background: #ffc3b4;
 }
 
 /* Position and sizing of clickable cross button */
@@ -25,20 +25,17 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: #ffc3b4;
 }
-
-.snack-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media only screen and (max-width: 768px) {
+  div.links {
+    margin-top: 1.2rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+  }
 }
-
-/*
-Sidebar wrapper styles
-Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
-*/
-
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
@@ -46,14 +43,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: #2ab8a2;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
-}
-
-/* Morph shape necessary with bubble or elastic */
-.bm-morph-shape {
-  fill: #373a47;
 }
 
 /* Wrapper for item list */
@@ -61,19 +53,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: #b8b7ad;
   display: flex;
   flex-wrap: wrap;
-
   flex-direction: column;
   padding: 0.8em;
+  /* min-height: 30vh; */
 }
 
 /* Individual item */
-.bm-item.snacks {
+.bm-item {
   display: flex;
-  /* flex-wrap: wrap; */
-  flex-direction: column;
-}
-
-.bm-item-links {
+  align-items: space-around;
+  min-height: 50vh;
 }
 /* Styling of overlay */
 .bm-overlay {
@@ -84,7 +73,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   text-align: center;
   font-weight: bold;
   font-size: 34px;
-  /* flex: 1; */
   max-width: 30vw;
   transition: 250ms all;
   text-decoration: none;
@@ -136,6 +124,7 @@ select.sort {
   font-family: "Comfortaa";
   align-items: stretch;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 nav {
@@ -173,7 +162,6 @@ nav {
     margin-top: -2px;
     box-shadow: 1px 1px 1px 0.3px #ffd5ac;
     width: 100%;
-    margin-bottom: 10px;
     flex-direction: row;
   }
 
@@ -190,6 +178,10 @@ nav {
     justify-content: space-evenly;
     font-size: 24px;
     display: flex;
+  }
+
+  .logo {
+    flex: 1;
   }
 
   .snack-menu {
