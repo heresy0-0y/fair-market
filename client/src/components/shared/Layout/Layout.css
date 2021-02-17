@@ -4,6 +4,13 @@
   /* flex-direction: column; */
   height: 100%;
   margin-bottom: -1rem;
+  /* position: absolute; */
+  bottom: 0;
+  top: 0;
+}
+
+.layout-children {
+  height: 100%;
 }
 
 .form search-form {

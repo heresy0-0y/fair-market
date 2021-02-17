@@ -16,23 +16,3 @@ footer {
 .devs {
   text-align: center;
 }
-
-@media only screen and (min-width: 500px) {
-  footer {
-    display: flex;
-    /* align-items: center; */
-    padding: 15px;
-    background-color: #2ab8a2;
-    color: #134762;
-    font-family: "Comfortaa";
-    /* height: 100%; */
-    /* margin-bottom: -50px; */
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* margin-bottom: -1rem; */
-    position: absolute;
-    bottom: 0;
-    /* margin-bottom: -1rem; */
-    width: 100%;
-  }
-}

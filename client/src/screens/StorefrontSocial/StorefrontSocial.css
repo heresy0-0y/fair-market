@@ -7,9 +7,9 @@
   break-inside: avoid;
   justify-content: center;
   height: 100%;
-  overflow-y: hidden;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto;
 }
 div.layout {
   height: 100;
