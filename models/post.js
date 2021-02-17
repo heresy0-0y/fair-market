@@ -7,7 +7,7 @@ const Post = new Schema(
     content: { type: String, required: true },
     userId: { type: Schema.Types.ObjectId, ref: "users" },
   },
-  { timestamps: true }
+  { timestamps: true, toJSON: { virtuals: true } }
 );
 
 module.exports = mongoose.model("posts", Post);

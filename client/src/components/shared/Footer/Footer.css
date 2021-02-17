@@ -5,14 +5,31 @@ footer {
   background-color: #2ab8a2;
   color: #134762;
   font-family: "Comfortaa";
-  margin-bottom: 10px;
-  position: static;
-  width: 100vw;
+  /* height: 100%; */
+  /* margin-bottom: -50px; */
+  position: absolute;
+  bottom: 0;
+  /* margin-bottom: -1rem; */
+  width: 100%;
 }
+
 .devs {
   text-align: center;
 }
 
-/* @media only screen and (min-width: 769px) {
-  
-} */
+@media only screen and (min-width: 769px) {
+  footer {
+    display: flex;
+    /* align-items: center; */
+    padding: 15px;
+    background-color: #2ab8a2;
+    color: #134762;
+    font-family: "Comfortaa";
+    /* height: 100%; */
+    /* margin-bottom: -50px; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* margin-bottom: -1rem; */
+    width: 100%;
+  }
+}
