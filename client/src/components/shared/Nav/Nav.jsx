@@ -37,16 +37,18 @@ const Nav = ({ user }) => {
   return (
     <>
       <div className="snackBar">
-        <Menu classname="snack-menu" itemListElement="div">
-          <NavLink className="logo" to="/storefront-social">
-            Storefront Social
-          </NavLink>
-          <div className="links">
-            {user && (
-              <div className="linkwelcome">Welcome, {user.username}</div>
-            )}
-            {alwaysOptions}
-            {user ? authenticatedOptions : unauthenticatedOptions}
+        <Menu className="snack-menu" itemListElement="div">
+          <div className="snacks">
+            <NavLink className="logo" to="/storefront-social">
+              Storefront Social
+            </NavLink>
+            <div className="links">
+              {user && (
+                <div className="linkwelcome">Welcome, {user.username}</div>
+              )}
+              {alwaysOptions}
+              {user ? authenticatedOptions : unauthenticatedOptions}
+            </div>
           </div>
         </Menu>
       </div>
