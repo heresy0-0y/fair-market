@@ -37,6 +37,7 @@ input[type="password"] {
   align-items: center !important;
   margin-top: 85px;
   padding: 10px;
+  max-width: 1000px;
 }
 .label {
   padding-top: 50;
