@@ -4,12 +4,15 @@ body {
   background-color: #33749b;
   overflow-x: hidden;
 }
+
 .app {
   height: 100%;
 }
+
 label {
   font-family: "Comfortaa";
 }
+
 div {
   overflow-y: scroll;
 }
