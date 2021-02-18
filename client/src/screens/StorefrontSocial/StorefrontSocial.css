@@ -3,17 +3,17 @@
   column-count: 2;
   column-gap: 12px;
   grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: 1fr auto; */
   break-inside: avoid;
   justify-content: center;
-  height: 70%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
   margin-top: 20px;
 }
-div.layout {
-  height: 100;
+
+.all-the-posts-container {
+  overflow: scroll;
 }
 
 .single-post {
