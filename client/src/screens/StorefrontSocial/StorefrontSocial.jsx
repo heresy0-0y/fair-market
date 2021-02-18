@@ -74,9 +74,7 @@ const StorefrontSocial = (props) => {
       <div className="sort">
         <Sort onSubmit={handleSubmit} onChange={handleSort} />
       </div>
-      <div className="all-the-posts-container">
-        <div className="storefront-social-posts">{postsJSX}</div>
-      </div>
+      <div className="storefront-social-posts">{postsJSX}</div>
     </Layout>
   );
 };
