@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
-import { verifyUser } from "./services/users";
+import { verifyUser, getUsers } from "./services/users";
 import Storefront from "./screens/Storefront/Storefront";
 import StorefrontSocial from "./screens/StorefrontSocial/StorefrontSocial";
 import SignUp from "./screens/SignUp/SignUp";
@@ -13,6 +13,7 @@ import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null);
+  const [users, setUsers] = useState([]);
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -20,6 +21,14 @@ function App() {
       user ? setUser(user) : setUser(null);
     };
     fetchUser();
+  }, []);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      const users = await getUsers();
+      users ? setUsers(users) : setUser(null);
+    };
+    fetchUsers();
   }, []);
 
   const clearUser = () => setUser(null);
@@ -55,7 +64,7 @@ function App() {
           )}
         </Route>
         <Route exact path="/storefront-social/posts/:id">
-          <PostDetail user={user} />
+          <PostDetail user={user} users={users} />
         </Route>
       </Switch>
     </div>
