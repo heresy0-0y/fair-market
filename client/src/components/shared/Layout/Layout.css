@@ -4,18 +4,20 @@
   /* flex-direction: column; */
   height: 100%;
   margin-bottom: -1rem;
-  /* position: absolute; */
+  /* position: sticky; */
   bottom: 0;
   top: 0;
 }
 
 .layout-children {
+  overflow-x: scroll;
   height: 100%;
+  margin: auto;
+  padding: auto;
 }
 
 .form search-form {
-  margin-top: 10px;
+  /* margin-top: 10px; */
 
   background-color: #33749b;
 }
-
