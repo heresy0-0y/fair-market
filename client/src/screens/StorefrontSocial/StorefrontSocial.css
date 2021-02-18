@@ -12,10 +12,6 @@
   margin-top: 20px;
 }
 
-.all-the-posts-container {
-  overflow: scroll;
-}
-
 .single-post {
   margin: auto;
   height: auto;
