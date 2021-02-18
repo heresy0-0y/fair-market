@@ -12,13 +12,7 @@ body {
 label {
   font-family: "Comfortaa";
 }
-
+/* 
 div {
   overflow-y: scroll;
-}
-
-@media only screen and (min-width: 769px) {
-  div {
-    overflow-y: visible;
-  }
-}
+} */
