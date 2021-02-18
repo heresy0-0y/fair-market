@@ -49,3 +49,12 @@ export const verifyUser = async () => {
   }
   return false;
 };
+
+export const getUsers = async () => {
+  try {
+    const res = await api.get("/");
+    return res.data;
+  } catch (error) {
+    throw error;
+  }
+};

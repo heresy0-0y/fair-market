@@ -33,18 +33,18 @@ const PostDetail = (props) => {
       <div className="post-detail">
         <div className="detail">
           <div className="subject">{post.subject}</div>
+          <span>{post.userId}</span>
           <div className="date">{datePosted}</div>
           <div className="content">{`${post.content}`}</div>
         </div>
         <div className="button-container">
-          <button className="edit-button"
-           
-              
+          <button
+            className="edit-button"
             onClick={() =>
-              history.push(`/storefront-social/posts/${post._id}/edit`)}
-            >
-              Edit
-            
+              history.push(`/storefront-social/posts/${post._id}/edit`)
+            }
+          >
+            Edit
           </button>
           <button
             className="delete-button"
