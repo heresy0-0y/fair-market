@@ -5,14 +5,7 @@ footer {
   background-color: #2ab8a2;
   color: #134762;
   font-family: "Comfortaa";
-  /* height: 100%; */
-  /* margin-bottom: -50px; */
-  position: sticky;
-  bottom: 0;
-  /* margin-bottom: -1rem; */
-  width: 100%;
-}
-
-.devs {
-  text-align: center;
+  margin-bottom: 10px;
+  position: static;
+  justify-content: center;
 }

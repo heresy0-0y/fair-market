@@ -11,12 +11,14 @@ const Post = new Schema(
 )
  
 const User = new Schema(
- {
-   name: { type: String, required: true },
-   imgURL: { type: String, required: true }
- },
- { timestamps: true }
-)
+  {
+    posts: [{ type: Schema.Types.ObjectId, ref: "posts" }],
+    username: { type: String, required: true },
+    email: { type: String, required: true },
+    password_digest: { type: String, required: true },
+  },
+  { timestamps: true }
+);
 
 ## Overview:
 Our Fair Market app will offer a platform for shoppers to navigate through and review community-based shops. Upon sign-in, users can review these shops and make posts on the different StoreFront socials. Users can click on these posts to be directed toward a social post detail page. We hope that Fair Market will serve as a platform to empower often-overlooked under under-resourced communities of shops.
@@ -32,7 +34,7 @@ https://whimsical.com/NZE9DgRCB2WibG55RYYQx3
 https://github.com/heresy0-0y/fair-market/projects/1
 
 ## Wireframes 
-![](https://i.ibb.co/BfvtfGn/Screen-Shot-2021-02-09-at-2-04-36-PM.png) 
+
 https://assets.adobe.com/id/urn:aaid:sc:US:21058031-ca9e-4aef-a287-2f7f56bbd7ab?view=difile)
 
 ![](https://i.ibb.co/fFYcxdv/Screen-Shot-2021-02-11-at-12-17-19-PM.png)
