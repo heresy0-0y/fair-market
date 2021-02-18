@@ -14,7 +14,7 @@
   height: 100%;
   margin: auto;
   padding: auto;
-  scrollbar-color: #FFC3B4 #33749B;
+  scrollbar-color: <#FFC3B4> <#33749B>;
 }
 
 .form search-form {
