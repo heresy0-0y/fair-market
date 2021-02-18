@@ -10,7 +10,7 @@
 }
 
 .layout-children {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100%;
   margin: auto;
   padding: auto;
