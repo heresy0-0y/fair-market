@@ -31,13 +31,12 @@ const PostEdit = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    let { id } = props.match.params;
     const updated = await updatePost(id, post);
     setUpdated(updated);
   };
 
   if (isUpdated) {
-    return <Redirect to={`/posts/${props.match.params.id}`} />;
+    return <Redirect to={`/`} />;
   }
 
   return (
